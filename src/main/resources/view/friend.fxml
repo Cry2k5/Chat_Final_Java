@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="friendField" prefHeight="60.0" prefWidth="216.0" styleClass="container" stylesheets="@friend.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FriendController">
+   <children>
+      <ImageView fx:id="friendAvatar" fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/avatar.jpg" />
+         </image></ImageView>
+      <Label fx:id="friendName" layoutX="68.0" layoutY="6.0" prefHeight="46.0" prefWidth="139.0" styleClass="friendName" stylesheets="@friend.css" text="friendName" />
+   </children>
+</AnchorPane>

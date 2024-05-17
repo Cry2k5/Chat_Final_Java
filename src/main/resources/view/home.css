@@ -1,0 +1,17 @@
+.container{
+	-fx-background-color: white;
+  	-fx-background-position: center;
+  	-fx-font-family: Arial, sans-serif;
+}
+.yourName{
+    -fx-font-size : 20px;
+    -fx-font-weight: bold;
+}
+.welcome{
+-fx-font-size : 30px;
+    -fx-font-weight: bold;
+}
+.detail{
+-fx-font-size : 20px;
+}
+

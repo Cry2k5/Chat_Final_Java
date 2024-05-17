@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="container" stylesheets="@home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="yourAvatar" fitHeight="76.0" fitWidth="100.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/avatar.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="yourName" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="100.0" prefHeight="35.0" prefWidth="146.0" styleClass="yourName" stylesheets="@home.css" text="Your Name" textAlignment="CENTER" />
+            <TextField layoutX="9.0" layoutY="162.0" prefHeight="26.0" prefWidth="185.0" promptText="Search" />
+            <VBox fx:id="friendView" layoutX="13.0" layoutY="200.0" prefHeight="387.0" prefWidth="176.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="chatHomeView" prefHeight="600.0" prefWidth="600.0" visible="false">
+               <children>
+                  <Button fx:id="sendBtn" layoutX="514.0" layoutY="542.0" mnemonicParsing="false" onAction="#send">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/send.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextArea fx:id="chatArea" layoutX="35.0" layoutY="537.0" prefHeight="50.0" prefWidth="450.0" />
+                  <VBox fx:id="chatView" layoutX="25.0" layoutY="33.0" prefHeight="500.0" prefWidth="550.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="welcomeView" prefHeight="600.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="100.0" layoutY="50.0" prefHeight="135.0" prefWidth="399.0" styleClass="welcome" stylesheets="@home.css" text=" Welcome to CHAT ATC">
+                     <font>
+                        <Font name="Arial" size="60.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="272.0" fitWidth="398.0" layoutX="164.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="133.0" layoutY="470.0" prefHeight="23.0" prefWidth="334.0" styleClass="detail" stylesheets="@home.css" text="Chatting is simpler and easier now." />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

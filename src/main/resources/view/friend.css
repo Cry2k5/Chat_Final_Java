@@ -1,0 +1,11 @@
+.container{
+    -fx-font-family: Arial, sans-serif;
+	-fx-background-color: white;
+	-fx-cursor: hand;
+    -fx-background-color: #e5e5e5;
+    -fx-border-width: 25px;
+}
+
+.friendName{
+-fx-font-size : 15px;
+}
